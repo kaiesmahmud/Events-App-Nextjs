@@ -13,7 +13,7 @@ const About = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Circle/>
+            {/* <Circle/> */}
             <Navbar/>
             <div className='text-3xl font-bold text-center min-h-[100vh]'>
                     This is about page

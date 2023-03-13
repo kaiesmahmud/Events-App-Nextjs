@@ -7,6 +7,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Circle from '@/components/circle'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Home({data}) {
   return (
@@ -17,22 +18,22 @@ export default function Home({data}) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-        <Circle/>
+        
       <Navbar/>
       <main className='min-h-[100vh]'>
         <div>
           {
             data.map(ev=>(
-              <a href={`events/${ev.id}`} key={ev.title}>
+              
+              <Link href={`events/${ev.id}`} key={ev.title} passHref>
                 {/* <Image src={ev.image} alt={ev.id} width={'500'} height={'300'} className="w-[500px]"/> */}
                 <img src={ev.image} alt={ev.title} className='w-[200px]' />
                 <h2>{ev.title}</h2>
                 <p>{ev.description}</p>
-              </a>
+              </Link>
             ))
           }
         </div>
-        <h1 className='text-2xl font-bold'>Hello world </h1>
       </main>
       <Footer/>
     </>

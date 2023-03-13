@@ -2,8 +2,9 @@ import Head from 'next/head'
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import Circle from '@/components/circle';
+import Link from 'next/link';
 
-const EventCatPage = ({data}) => {
+const EventCatPage = ({data,pageName}) => {
     return (
         <>
             <Head>
@@ -14,13 +15,16 @@ const EventCatPage = ({data}) => {
             </Head>
             {/* <Circle/> */}
             <Navbar/>
-            <main className=' min-h-[70vh] flex justify-center '>
+            <h2 className='text-xl md:text-3xl lg:text-4xl font-bold text-center text-slate-800 p-5'>
+                Events in {pageName}
+            </h2>
+            <main className=' min-h-[70vh] flex   justify-center '>
                 <div className='flex flex-col md:flex-row flex-wrap gap-10 w-100 items-center justify-center w-[80%]'>
                     {
                         data.map(ev=>(
-                            <a href={`events/${ev.city}/${ev.id}`} key={ev.id} className="bg-slate-100 rounded-lg p-2
-                             w-[90%] md:w-[45%] flex flex-col items-center justify-center
-                             hover:bg-slate-200 hover:text-slate-800 transition-all duration-200 ease-in hover:shadow-lg">
+                            <Link href={`${ev.city}/${ev.id}`} key={ev.id} className="bg-slate-100 rounded-lg p-2
+                             w-[90%] lg:w-[45%] flex flex-col items-center justify-center
+                             hover:bg-slate-200 hover:text-slate-800 transition-all duration-200 ease-in hover:shadow-lg" passHref>
                                 <div className='  overflow-hidden rounded-lg hover:shadow-lg relative ho   '>
                                     <img className=' rounded-lg hover:scale-125 transition-all ease-in duration-200' src={ev.image} alt={ev.title} />
                                     {/* <h2 className='w-full hover:bg-slate-800 block p-2 text-white font-bold text-lg absolute bottom-4  text-center
@@ -33,8 +37,7 @@ const EventCatPage = ({data}) => {
                                     <hr />
                                     <p className=' capitalize'>{ev.description}</p>
                                 </div>
-                               
-                            </a>
+                            </Link>
                         ))
                     }
                 </div>
@@ -50,10 +53,11 @@ export async function getStaticProps(context){
     const {allEvents} = await import('./../../../data/data.json')
     const id = context?.params?.cat;
     const data = allEvents.filter(ev=> ev.city === id)
-    console.log(data)
+    // console.log(data)
     return{
         props:{
-            data:data
+            data,
+            pageName:id
         }
     }
 }
@@ -67,7 +71,7 @@ export async function getStaticPaths(){
             }
         }
     })
-    console.log(allpaths);
+    // console.log(allpaths);
     return{
         paths:allpaths,
         fallback:false
