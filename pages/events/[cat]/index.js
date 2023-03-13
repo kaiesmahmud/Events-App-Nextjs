@@ -27,8 +27,6 @@ const EventCatPage = ({data,pageName}) => {
                              hover:bg-slate-200 hover:text-slate-800 transition-all duration-200 ease-in hover:shadow-lg" passHref>
                                 <div className='  overflow-hidden rounded-lg hover:shadow-lg relative ho   '>
                                     <img className=' rounded-lg hover:scale-125 transition-all ease-in duration-200' src={ev.image} alt={ev.title} />
-                                    {/* <h2 className='w-full hover:bg-slate-800 block p-2 text-white font-bold text-lg absolute bottom-4  text-center
-                                    transition-all duration-200'>{ev.title}</h2> */}
                                 </div>
                                 <div className='p-2 text-center'>
                                     <h2 className='text-lg capitalize font-bold'>{ev.title}</h2>
