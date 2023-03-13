@@ -1,9 +1,9 @@
+import Head from 'next/head'
 import Circle from '@/components/circle';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
-import Head from 'next/head'
 
-const index = ({data}) => {
+const EventPage = ({data}) => {
     return (
         <>
             <Head>
@@ -11,8 +11,8 @@ const index = ({data}) => {
                 <meta name="description" content="This is App is created by Kaies Mahmud Nehal . Inspired by FreeCodeCamp." />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
-                <Circle/>
             </Head>
+            <Circle/>
             <Navbar/>
             <main className=' min-h-[70vh] flex justify-center '>
                 <div className='flex flex-col md:flex-row flex-wrap gap-10 w-100 items-center justify-center w-[80%]'>
@@ -34,7 +34,7 @@ const index = ({data}) => {
     );
 };
 
-export default index;
+export default EventPage;
 
 export async function getStaticProps(){
     const {events_categories} = await import('./../../data/data.json')

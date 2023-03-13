@@ -28,7 +28,10 @@
             "emails_registered":[]
         },
         {
-            "id":"hyde-park-winter-wonderland","title":"Hyde Park Winter Wonderland","city":"London","description":"Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
+            "id":"hyde-park-winter-wonderland",
+            "title":"Hyde Park Winter Wonderland",
+            "city":"London",
+            "description":"Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
             "image":"https://hydeparkwinterwonderland.com/static/252d7fe6693a6a8b1887bd2049204103/039f7/2021-503x503-3.webp",
             "emails_registered":[]
         },
@@ -41,8 +44,8 @@
             "emails_registered":[]
         },
         {
-            "id":"'edtech-world-summit-2022",
-            "title":"EdTech World Summit 2022","city":"london","description":"Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
+            "id":"'edtech-world-summit-2023",
+            "title":"EdTech World Summit 2023","city":"london","description":"Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
             "image":"https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
             "emails_registered":["alicia@gmail.com","monica@gmail.com"]
         },
@@ -55,8 +58,8 @@
             "emails_registered":["monica@gmail.com"]
         },
         {
-            "id":"kiss-haunted-house-party-2022",
-            "title":"KISS Haunted House Party 2022",
+            "id":"kiss-haunted-house-party-2023",
+            "title":"KISS Haunted House Party 2023",
             "city":"london",
             "description":"Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
             "image":"https://wembleypark.com/media/images/KISS-HHP-42-1440x810-Logos-Date-de.2e16d0ba.fill-496x279.jpg",
@@ -116,8 +119,8 @@
             "emails_registered":["alicia@gmail.com","monica@gmail.com"]
         },
         {
-            "id":"world-congress-2022---barcelona",
-            "title":"World Congress 2022 - Barcelona",
+            "id":"world-congress-2023---barcelona",
+            "title":"World Congress 2023 - Barcelona",
             "city":"barcelona",
             "description":"Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
             "image":"https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",

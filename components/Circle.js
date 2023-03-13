@@ -1,5 +1,5 @@
 import Script from 'next/script'
-// import './../public/cursor/cursor.css'
+import './../public/cursor/cursor.css'
 
 const Circle = () => {
     return (

@@ -8,10 +8,6 @@ import Footer from '@/components/Footer'
 import Circle from '@/components/circle'
 import Image from 'next/image'
 
-// import { Inter } from 'next/font/google'
-// import styles from '@/styles/Home.module.css'
-// const inter = Inter({ subsets: ['latin'] })
-
 export default function Home({data}) {
   return (
     <>
@@ -20,14 +16,14 @@ export default function Home({data}) {
         <meta name="description" content="This is App is created by Kaies Mahmud Nehal . Inspired by FreeCodeCamp." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <Circle/>
       </Head>
+        <Circle/>
       <Navbar/>
       <main className='min-h-[100vh]'>
         <div>
           {
             data.map(ev=>(
-              <a href={`events/${ev.id}`}>
+              <a href={`events/${ev.id}`} key={ev.title}>
                 {/* <Image src={ev.image} alt={ev.id} width={'500'} height={'300'} className="w-[500px]"/> */}
                 <img src={ev.image} alt={ev.title} className='w-[200px]' />
                 <h2>{ev.title}</h2>

@@ -6,7 +6,7 @@ export default function App({ Component, pageProps }) {
   <>
     {/* <Script src="./cursor/cursor.js" defer></Script> */}
     <Component {...pageProps} />
-    <Script src="./../cursor/cursor.js" defer></Script>
+    {/* <Script src="./../../cursor/cursor.js" defer></Script> */}
     
   </>
   )
