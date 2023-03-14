@@ -9,6 +9,7 @@ export const SingleEvent = ({eventData}) => {
         <div className='flex justify-center items-center  overflow-hidden rounded-lg   m-5 '>
             <img className='rounded-lg ' src={eventData.image} alt={eventData.title} />
         </div>
+        
     </main> 
   )
 }

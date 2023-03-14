@@ -35,14 +35,10 @@ const Navbar = () => {
                                     About
                                 </div>
                             </Link>
-                            <Link href='/events' passHref>
-                                <div className='hover:bg-black hover:text-white transition-all ease-in px-5 py-2 rounded'>
-                                  Events
-                                </div>
-                            </Link>
+                            
                             <Link href='/events' passHref>
                                 <div className='hover:bg-black hover:text-white transition-all ease-in px-5 py-2 rounded border border-black text-center'>
-                                    Contact Me
+                                    Events
                                 </div>
                             </Link>
                                 
