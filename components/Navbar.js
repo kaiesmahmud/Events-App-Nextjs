@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import {VscClose} from 'react-icons/vsc';
 import {HiBars2} from 'react-icons/hi2';
 import Link from 'next/link';
-import Circle from './Circle';
 
 const Navbar = () => {
     const [openMenu, setOpenMenu] = useState(false)
@@ -25,18 +24,18 @@ const Navbar = () => {
                         </div>
                     </div>
                     <div className={`w-full p-5  bg-opacity-40 flex-col lg:flex lg:flex-row bg-black lg:bg-inherit  md:justify-evenly items-center gap-2 ${(openMenu)?"flex":"hidden"} transition-all duration-300`}>
-                            <Link href='/' passHref>
+                            <Link href='/' passHref onClick={changeOpenMenu}>
                                 <div className='hover:bg-black hover:text-white transition-all ease-in px-5 py-2 rounded'>
                                     Home
                                 </div>
                             </Link>
-                            <Link href='/aboutus' passHref>
+                            <Link href='/aboutus' passHref onClick={changeOpenMenu}>
                                 <div className='hover:bg-black hover:text-white transition-all ease-in px-5 py-2 rounded'>
                                     About
                                 </div>
                             </Link>
                             
-                            <Link href='/events' passHref>
+                            <Link href='/events' passHref onClick={changeOpenMenu}>
                                 <div className='hover:bg-black hover:text-white transition-all ease-in px-5 py-2 rounded border border-black text-center'>
                                     Events
                                 </div>
