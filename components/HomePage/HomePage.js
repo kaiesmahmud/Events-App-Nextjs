@@ -10,7 +10,7 @@ export const HomePage = ({data}) => {
               <Link href={`events/${ev.id}`} key={ev.title} passHref>
                 <div className='flex flex-col lg:flex-row gap-5 '>
                   <div className={`w-[90%] lg:w-[50%] overflow-hidden rounded-lg ${id%2==0?'':" lg:order-2"}`}>
-                    <img src={ev.image} alt={ev.title} className='w-[100%] rounded hover:scale-125 transition-all duration-200' />
+                    <img src={ev.image} alt={ev.title} className='w-[100%] rounded hover:scale-125 transition-all ease-in duration-200' />
                   </div>
                   <div className='w-[90%] lg:w-[50%] flex flex-col justify-center '>
                     <h2 className='font-bold text-lg md:text-xl lg:text-2xl'>{ev.title}</h2>
