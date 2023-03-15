@@ -1,8 +1,4 @@
-import Footer from '@/components/Footer';
-import Navbar from '@/components/Navbar';
-import Circle from '@/components/circle';
 import Head from 'next/head'
-
 
 const About = () => {
     return (
